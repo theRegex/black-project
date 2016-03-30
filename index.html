@@ -15,7 +15,15 @@
 
 
 <main class="app-load" ng-controller="systemCenter">
-	{{msg}}
+<!--Just for testing routers js/h_routing.js , Must run on server to avoid Cross Origin Scripting -->
+	<ul>
+		<li><a ui-sref="/feed">feed</a></li>
+		<li><a ui-sref="/browse">browse</a></li>
+		<li><a ui-sref="/genres">genres</a></li>
+		<li><a ui-sref="/inbox">inbox</a></li>
+	</ul>
+
+	<div ui-view></div>
 </main>
 
 <script type="text/javascript" src="libs/jquery.min.js"></script>

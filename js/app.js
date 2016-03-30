@@ -1,4 +1,4 @@
-var hdio = angular.module('heardioApp', []);
+var hdio = angular.module('heardioApp', ['ui.router']);
 
 
 
