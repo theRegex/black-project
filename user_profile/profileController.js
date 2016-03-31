@@ -1,6 +1,7 @@
-hdio.controller('profile', ['$scope','g_utility', function($scope,g_utility){
+hdio.controller('profile', ['$scope','g_utility', function($scope,g_utility,storageControl){
 	$scope.msg = "Your Profile";
-	$scope.userInfo = null;
+	$scope.userInfoIn = null;
+	$scope.userIngoOut = null;
 
 	$scope.init = function(){
 			$scope.presentUser();

@@ -1,19 +1,17 @@
 hdio.service('g_utility',function($http,$q,$rootScope){
-		
-//Must run on server to avoid Cross Origin Requests Security!!!!
+  
+	//Must run on server to avoid Cross Origin Requests Security!!!!
 	var g_utility = this;
-
-	var lastAppState = localStorage;
-    var sessionBackPack = sessionStorage;
-   //last edits made here
-	g_utility.user = [];
-
-g_utility.getCurrentUser = function(){
-var defer = $q.defer();
-$http.get($rootScope.endPoint + "/user.json")
-.success(function(res){
+	//Providing list of genres in service 
+	g_utility.genres = ["Alternative Rock","Hard Rock","Club Dance","Dubstep","Electro House","Techno","Alternative Rap","Hip-Hop","Rap","Pop","R&B","Instrumental","Africa","Caribbean","South America","Asia","Indian"]
+    //last edits made here
+	g_utility.user = null;
+	g_utility.getCurrentUser = function(){
+	var defer = $q.defer();
+	$http.get($rootScope.endPoint + "/user.json")
+	.success(function(res){
 	
-		g_utility.user.push(res)
+		g_utility.user = res;
 		var cResponse = JSON.stringify(res);
 		console.log("success!" + cResponse)
 	defer.resolve(res);
@@ -24,12 +22,8 @@ $http.get($rootScope.endPoint + "/user.json")
 })
 
 return defer.promise;
+
 }
-
-
-
-
-
 
 	return g_utility;
 })
