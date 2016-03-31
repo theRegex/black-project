@@ -1,0 +1,41 @@
+{
+  "user": {
+    "id": 0,
+    "username": "theRockstar",
+    "fullname": "Tobl Magic",
+    "default_profile": false,
+    "default_profile_img": "",
+    "created_at": "",
+    "location": "Texas",
+    "time_zone": "",
+    "bio": "",
+    "rank": 0,
+    "songs": 0,
+    "songsUrl": {
+      "titles": {
+        "songname": "",
+        "paths": "",
+        "genre": ""
+      }
+    },
+    "post": [
+      {
+        "time": "",
+        "stated": ""
+      }
+    ],
+    "has_playlist": false,
+    "following": 0,
+    "followers_count": 0,
+    "favorites_count": 0,
+    "friends": {
+      "names": [
+        {
+          "name": ""
+        }
+      ]
+    },
+    "profilephotoUrl": "",
+    "has_notifications": false
+  }
+}
