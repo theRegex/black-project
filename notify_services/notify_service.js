@@ -1,5 +1,10 @@
-hdio.factory('notifications', function(){
-	var deferred = $q.defer();
+hdio.factory('notifications', function(globalWinUtilities , $q){
+var q = $q.defer();
+$scope.init = function(){
+			
+	}
+
+
 //get all data that will be notify to user . 
 	if(user_notifications == true){
 	return {

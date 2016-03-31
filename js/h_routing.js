@@ -4,14 +4,13 @@ hdio.config(function($stateProvider, $urlRouterProvider) {
 	.state('/login',{
 		url: "/login",
 		templateUrl : "/project-black/login/login.html",
-		controller : 'login'
-
+		controller : 'login',
+		
 	})
 	.state('/feed',{
 		url: "/feed",
 		templateUrl : "/project-black/user_feed/feed.html",
-		controller: 'feed'
-
+		controller: 'feed',
 	})
 	.state('/browse',{
 		url: "/browse",

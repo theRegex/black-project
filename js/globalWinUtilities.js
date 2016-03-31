@@ -1,39 +1,35 @@
-hdio.service('g_utility',function($scope,$http){
-			var deferred = $q.defer();
+hdio.service('g_utility',function($http,$q,$rootScope){
+		
+//Must run on server to avoid Cross Origin Requests Security!!!!
+	var g_utility = this;
+
 	var lastAppState = localStorage;
     var sessionBackPack = sessionStorage;
    //last edits made here
-	$scope.user = {
-		  id: 0,
-		  username: "",
-		  fullname: "",
-		  default_profile: false,
-		  default_profile_img: true,
-		  created_at: "",
-		  geo: "",
-		  time_zone: "",
-		  bio: "",
-		  rank: 0,
-		  songs: 0,
-		  posts: [
-		  {
-		  	time: "" , 
-		  	stated: "",
+	g_utility.user = [];
 
-		   }
-		  ],
-		  has_playlist: true,
-		  following: 0,
-		  followers_count: 0,
-		  favourites_count: 0,
-		  friends: [
-		    {
-		      names: {}
-		    }
-		  ],
-  	      profilephotoUrl: ""
-  }
-
-
+g_utility.getCurrentUser = function(){
+var defer = $q.defer();
+$http.get($rootScope.endPoint + "/user.json")
+.success(function(res){
 	
+		g_utility.user.push(res)
+		var cResponse = JSON.stringify(res);
+		console.log("success!" + cResponse)
+	defer.resolve(res);
+
+}).error(function(err,status){
+	defer.reject(err)
+	console.log("Error in getCurrentUser!::" + err +":"+ + res)
+})
+
+return defer.promise;
+}
+
+
+
+
+
+
+	return g_utility;
 })
