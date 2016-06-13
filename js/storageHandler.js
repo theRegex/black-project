@@ -6,6 +6,7 @@ hdio.service('storageControl', function(g_utility){
 	storageControl.pushCurrentAppState = function(){
 
 	}
+	
 	storageControl.getLastAppState = function(){
 
 	}

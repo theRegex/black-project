@@ -2,36 +2,54 @@
 <html ng-app="heardioApp">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>heard.io beta v1.0</title>
-	<link rel="stylesheet" href="css/responsive/bootstrap.min.css">
-	<link rel="stylesheet" href="css/responsive/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>HEARD.IO - a new music platform</title>
+    <meta name="description" content="HEARD.IO is an app for all musical artists , Join Now" />
+    <meta name="keywords" content="Music , App , music app , Artists , Musicians, ">
+    <meta name="author" content="Tobl Technology , Keinan Pace">
+    <meta name="theme-color" content="#db5945">
+    <link rel="icon" sizes="124x124" href="heard_logo124px.png">
+    <link rel="apple-touch-icon" href="heard_logo124px.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/skeleton.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/ft-aws/font-awesome.min.css">
+	<link rel="stylesheet" href="css/heardiostyle.css">
+	<script src="libs/firebase.js"></script>
 	
 </head>
 <body>
 
-
+<div class="fixed-nav"></div>
 
 
 <main class="app-load" ng-controller="systemCenter">
 <!--Just for testing routers js/h_routing.js , Must run on server to avoid Cross Origin Scripting -->
-	<ul>
-		<li><a ui-sref="/feed">feed</a></li>
-		<li><a ui-sref="/browse">browse</a></li>
-		<li><a ui-sref="/genres">genres</a></li>
-		<li><a ui-sref="/inbox">inbox</a></li>
-		<li><a ui-sref="/profile">profile</a></li>
-	</ul>
+<div class="heard_nav">
 
+<div class="heard_app_logo"><img src="heard_logo300px.png" width="30" height="30"><div class="heard_nav_title"><h1>HEARD.IO</h1></div></div>
+<div class="heard_main_toolbar">
+	<ul class="heard_tools_list">
+	<li class="list-item-4" id="#" ui-sref="upload" >UPLOAD TRACK</li>
+		<li class="list-item-4" id="#" ui-sref="/profile"><i class="fa fa-user hd-1" aria-hidden="true"></i></li>
+		<li class="list-item-1" id="#" ui-sref="/feed"><i class="fa fa-newspaper-o hd-1" aria-hidden="true"></i></li>
+		<li class="list-item-2" id="#" ui-sref="/inbox"><i class="fa fa-envelope hd-1" aria-hidden="true"></i></li>
+		<li class="list-item-3" id="#" ui-sref="settings"><i class="fa fa-cog hd-1" aria-hidden="true"></i></li>
+	
+	</ul>
+</div>
+
+</div>
 	<div ui-view></div>
 </main>
 
 <script type="text/javascript" src="libs/jquery.min.js"></script>
 <script type="text/javascript" src="libs/angular.min.js"></script>
+<script type="text/javascript" src="libs/angularfire.min.js"></script>
 <script type="text/javascript" src="libs/angular-css.min.js"></script>
 <script type="text/javascript" src="libs/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/h_routing.js"></script>
 <script type="text/javascript" src="js/globalWinUtilities.js"></script>
 <script type="text/javascript" src="js/storageHandler.js"></script>
 <script type="text/javascript" src="user_browse/browseController.js"></script>
@@ -40,9 +58,11 @@
 <script type="text/javascript" src="user_latest/latestController.js"></script>
 <script type="text/javascript" src="user_profile/profileController.js"></script>
 <script type="text/javascript" src="user_settings/settingsController.js"></script>
+<script type="text/javascript" src="user_upload/upload.controller.js"></script>
 <script type="text/javascript" src="user_inbox/inboxController.js"></script>
 <script type="text/javascript" src="login/loginController.js"></script>
-<script type="text/javascript" src="js/h_routing.js"></script>
+<script type="text/javascript" src="directives/loginDirective.js"></script>
+
 
 </body>
 </html>

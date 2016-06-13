@@ -1,5 +1,6 @@
 hdio.config(function($stateProvider, $urlRouterProvider) {
-	 $urlRouterProvider.otherwise('/login');
+ $urlRouterProvider.otherwise('/profile');
+
 	$stateProvider
 	.state('/login',{
 		url: "/login",
@@ -40,6 +41,37 @@ hdio.config(function($stateProvider, $urlRouterProvider) {
 		url: "/profile",
 		templateUrl : "/project-black/user_profile/profile.html",
 		controller: 'profile'
+
+	})
+	.state('upload',{
+		url: "/upload",
+		templateUrl : "/project-black/user_upload/upload.html",
+		controller: 'upl326SNG'
+
+	})
+	.state('/success',{
+		url: "/success",
+		templateUrl : "/project-black/user_upload/success.html",
+		controller: 'upl326SNG'
+
+	})
+
+	.state('settings',{
+		url: "/settings",
+		templateUrl : "/project-black/user_settings/settings.html",
+		controller: 'settings'
+
+	})
+	.state('settings.password',{
+		url: "/password",
+		templateUrl : "/project-black/user_settings/password.html",
+		controller: 'settings'
+
+	})
+	.state('settings.edit',{
+		url: "/edit",
+		templateUrl : "/project-black/user_settings/edit.html",
+		controller: 'settings'
 
 	})
 

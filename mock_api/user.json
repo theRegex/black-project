@@ -1,41 +1,161 @@
 {
-  "user": {
-    "id": 0,
-    "username": "theRockstar",
-    "fullname": "Tobl Magic",
-    "default_profile": false,
-    "default_profile_img": "",
-    "created_at": "",
-    "location": "Texas",
-    "time_zone": "",
-    "bio": "",
-    "rank": 0,
-    "songs": 0,
-    "songsUrl": {
-      "titles": {
-        "songname": "",
-        "paths": "",
-        "genre": ""
-      }
+  "heard_msgservice" : {
+    "descriptions" : [ {
+      "welcome_msg" : "We are happy to have you as a new user of heard , Enjoy ! "
+    } ]
+  },
+  "heard_usernames" : {
+    "usersname" : [ "joel22" ]
+  },
+  "iOlivefeed" : {
+    "songs" : [ {
+      "cover_art" : "",
+      "featuring_artists" : "",
+      "genre" : "Rock",
+      "name" : "",
+      "song_comments" : [ {
+        "description" : "",
+        "user" : "",
+        "user_thumbnail" : ""
+      } ],
+      "song_downvote" : 0,
+      "song_upvote" : 0,
+      "song_url" : ""
+    } ]
+  },
+  "main_home" : {
+    "contents_front" : [ {
+      "banner_callout" : "",
+      "banner_media" : "",
+      "banner_text" : ""
+    }, {
+      "banner_callout" : "",
+      "banner_media" : "",
+      "banner_text" : ""
+    }, {
+      "banner_callout" : "",
+      "banner_media" : "",
+      "banner_text" : ""
+    }, {
+      "banner_callout" : "",
+      "banner_media" : "",
+      "banner_text" : ""
+    } ],
+    "io_tracklists" : {
+      "heard_tracks" : [ {
+        "cover_art" : "",
+        "featuring_artists" : "",
+        "genre" : "Rock",
+        "name" : "",
+        "song_comments" : [ {
+          "description" : "",
+          "user" : "",
+          "user_thumbnail" : ""
+        } ],
+        "song_downvote" : 0,
+        "song_upvote" : 0,
+        "song_url" : ""
+      } ]
+    }
+  },
+  "users" : {
+    "9848778b-b471-4a09-870b-ed31c30464a8" : {
+      "active_following" : true,
+      "bio" : "",
+      "conversations" : [ {
+        "messages" : [ {
+          "to" : "hello larry"
+        }, {
+          "from" : "whats up"
+        } ],
+        "thumbnail_url" : "http://getuikit.com/docs/images/placeholder_600x400.svg",
+        "user" : "larry"
+      } ],
+      "created_at" : "2016-05-07T00:28:05.282Z",
+      "followers" : [ {
+        "admin" : "larry"
+      } ],
+      "following" : [ {
+        "admin" : "larry"
+      } ],
+      "full_location" : "",
+      "full_name" : "kei",
+      "has_followers" : true,
+      "has_playlist" : false,
+      "has_projects" : false,
+      "has_songs" : true,
+      "hometown" : "",
+      "overall_votes" : 13,
+      "profile_picurl" : "",
+      "projects_count" : 0,
+      "songs_count" : 1,
+      "songs_uploads" : [ {
+        "cover_art" : "http://getuikit.com/docs/images/placeholder_600x400.svg",
+        "featuring_artists" : "Jack n Jill",
+        "genre" : "Pop",
+        "name" : "SongName",
+        "song_comments" : [ {
+          "description" : "This is fire!",
+          "user" : "Kyle",
+          "user_thumbnail" : "http://getuikit.com/docs/images/placeholder_600x400.svg"
+        } ],
+        "song_downvote" : 7,
+        "song_upvote" : 6,
+        "song_url" : ""
+      } ],
+      "total_downvotes" : 7,
+      "total_upvotes" : 6,
+      "user_id" : "9848778b-b471-4a09-870b-ed31c30464a8",
+      "verified" : true
     },
-    "post": [
-      {
-        "time": "",
-        "stated": ""
-      }
-    ],
-    "has_playlist": false,
-    "following": 0,
-    "followers_count": 0,
-    "favorites_count": 0,
-    "friends": {
-      "names": [
-        {
-          "name": ""
-        }
-      ]
-    },
-    "profilephotoUrl": "",
-    "has_notifications": false
+    "e25059e1-e550-4a1c-8d2b-0fdf775a9fb5" : {
+      "active_following" : true,
+      "bio" : "",
+      "conversations" : [ {
+        "messages" : [ {
+          "to" : "hello larry"
+        }, {
+          "from" : "whats up"
+        } ],
+        "thumbnail_url" : "http://getuikit.com/docs/images/placeholder_600x400.svg",
+        "user" : "larry"
+      } ],
+      "created_at" : "2016-05-07T02:31:30.949Z",
+      "followers" : [ {
+        "admin" : "larry"
+      } ],
+      "following" : [ {
+        "admin" : "larry"
+      } ],
+      "full_location" : "",
+      "full_name" : "Starr",
+      "has_followers" : true,
+      "has_playlist" : false,
+      "has_projects" : false,
+      "has_songs" : true,
+      "hometown" : "",
+      "overall_votes" : 13,
+      "profile_picurl" : "",
+      "projects_count" : 0,
+      "songs_count" : 1,
+      "songs_uploads" : [ {
+        "cover_art" : "http://getuikit.com/docs/images/placeholder_600x400.svg",
+        "featuring_artists" : "Jack n Jill",
+        "genre" : "Pop",
+        "name" : "SongName",
+        "song_comments" : [ {
+          "description" : "This is fire!",
+          "user" : "Kyle",
+          "user_thumbnail" : "http://getuikit.com/docs/images/placeholder_600x400.svg"
+        } ],
+        "song_downvote" : 7,
+        "song_upvote" : 6,
+        "song_url" : ""
+      } ],
+      "total_downvotes" : 7,
+      "total_upvotes" : 6,
+      "user_id" : "e25059e1-e550-4a1c-8d2b-0fdf775a9fb5",
+      "verified" : true
+    }
   }
 }

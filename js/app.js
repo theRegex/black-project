@@ -1,12 +1,21 @@
-var hdio = angular.module('heardioApp', ['ui.router']);
+var hdio = angular.module('heardioApp', ['ui.router','firebase']);
 
 
-
-hdio.controller('systemCenter', function($scope,$q,$rootScope){
+hdio.controller('systemCenter', function($scope,$q,$rootScope,$firebaseArray){
 	
-	$rootScope.globalUser = null;
-
+	
 	$scope.msg = "Loading..."
-	$rootScope.endPoint = "/project-black/mock_api"
+
+	$rootScope.previousState;
+$rootScope.currentState;
+$rootScope.$on('$stateChangeSuccess', function(ev, to, toParams, from, fromParams) {
+    $rootScope.previousState = from.name;
+    $rootScope.currentState = to.name;
+    console.log('Previous state:'+$rootScope.previousState)
+    console.log('Current state:'+$rootScope.currentState)
+});
+
+
+
 })
 
