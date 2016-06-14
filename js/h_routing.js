@@ -46,13 +46,13 @@ hdio.config(function($stateProvider, $urlRouterProvider) {
 	.state('upload',{
 		url: "/upload",
 		templateUrl : "/project-black/user_upload/upload.html",
-		controller: 'upl326SNG'
+		controller: 'heardUlOAD'
 
 	})
 	.state('/success',{
 		url: "/success",
 		templateUrl : "/project-black/user_upload/success.html",
-		controller: 'upl326SNG'
+		controller: 'heardUlOAD'
 
 	})
 

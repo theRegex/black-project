@@ -14,20 +14,17 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/skeleton.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/ft-aws/font-awesome.min.css">
+	<script type="text/javascript" src="libs/aws-sdk.js"></script>
 	<link rel="stylesheet" href="css/heardiostyle.css">
 	<script src="libs/firebase.js"></script>
 	
 </head>
 <body>
 
-<div class="fixed-nav"></div>
+<div class="fixed-nav-container">
+	<div class="heard_nav inner-nav-sizing">
 
-
-<main class="app-load" ng-controller="systemCenter">
-<!--Just for testing routers js/h_routing.js , Must run on server to avoid Cross Origin Scripting -->
-<div class="heard_nav">
-
-<div class="heard_app_logo"><img src="heard_logo300px.png" width="30" height="30"><div class="heard_nav_title"><h1>HEARD.IO</h1></div></div>
+<!-- <div class="heard_app_logo"><img src="heard_logo300px.png" width="30" height="30"><div class="heard_nav_title"><h1>HEARD.IO</h1></div></div>
 <div class="heard_main_toolbar">
 	<ul class="heard_tools_list">
 	<li class="list-item-4" id="#" ui-sref="upload" >UPLOAD TRACK</li>
@@ -37,9 +34,15 @@
 		<li class="list-item-3" id="#" ui-sref="settings"><i class="fa fa-cog hd-1" aria-hidden="true"></i></li>
 	
 	</ul>
-</div>
+</div> -->
 
 </div>
+</div>
+
+
+<main class="app-load" ng-controller="systemCenter">
+<!--Just for testing routers js/h_routing.js , Must run on server to avoid Cross Origin Scripting -->
+
 	<div ui-view></div>
 </main>
 
