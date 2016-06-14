@@ -1,9 +1,11 @@
 var hdio = angular.module('heardioApp', ['ui.router','firebase']);
-
+hdio.constant('FirbaseUrl', "https://heardio.firebaseio.com/");
+hdio.service('rootReference', ['FirbaseUrl', Firebase]);
 
 hdio.controller('systemCenter', function($scope,$q,$rootScope,$firebaseArray){
 	
-	
+	 //Providing list of genres in service 
+    $rootScope.genres = ["Alternative Rock", "Hard Rock", "Club Dance", "Dubstep", "Electro House", "Techno", "Alternative Rap", "Hip-Hop", "Rap", "Pop", "R&B", "Instrumental", "Africa", "Caribbean", "South America", "Asia", "Indian"];
 	$scope.msg = "Loading..."
 
 	$rootScope.previousState;
