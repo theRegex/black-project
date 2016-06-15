@@ -1,4 +1,4 @@
-hdio.controller('settings', ['$scope','rootReference' function($scope,rootReference){
+hdio.controller('settings', ['$scope','rootReference' ,function($scope,rootReference){
 	$scope.msg = "Modify Your Settings";
 	$scope.ref = rootReference;
 	
