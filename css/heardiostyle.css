@@ -167,6 +167,22 @@ overflow: hidden !important;
     box-shadow: 0 0 5px silver;
 }
 
+.heard_prfpic_sm{
+width: 40px;
+height: 40px;
+border-radius: 100%;
+overflow: hidden !important;
+    display: inline-block;
+    box-shadow: 0 0 5px silver;
+}
+
+.heard_prfpic_sm img{
+width: 100%;
+max-width: 100%;
+}
+
+
+
 
 .hd-1{
   font-size: 1.2em;
@@ -222,57 +238,20 @@ p{
     height: 30px;
 }
 
+.minus-left{
+  padding-left:0;
+}
+
+.minus-right{
+  padding-right:0;
+}
+
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-color: WHITE !important;
 }
 
 
 
-
-span.lg-msg {
-    position: relative;
-   left: 17px;
-    -webkit-transition:  ease all .3s !important;
-    -moz-transition:  ease all .3s !important;
-      -ms-transition: ease all .3s !important;
-        -o-transition: ease all .3s !important;
-        transition:  ease all .3s !important;
-}
-
-.button-defaulted{
-    transition: ease all .3s;
-   background-color: #f4f4f4;
-}
-
-button[type=submit]:disabled {
-     transition: ease all .3s;
-  color: white;
-    background: #dddddd;
-}
-
-.button:hover, button:hover{
-
-  border: 0 !important; 
-}
-
-.button:focus, button:focus{
-
-  border: 0 !important; 
-}
-
-input.ng-invalid.ng-dirty{
-
-     -webkit-box-shadow:0 1px 4px rgba(215, 44, 44, 0.5), 0 0 40px rgba(215, 44, 44, 0.3) inset;
-       -moz-box-shadow:0 1px 4px rgba(215, 44, 44, 0.5), 0 0 40px rgba(215, 44, 44, 0.3) inset;
-            box-shadow:0 1px 4px rgba(215, 44, 44, 0.5), 0 0 40px rgba(215, 44, 44, 0.3) inset;
-
-
-
-}
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
-     background-color: #fff;
-}
 
 
 
