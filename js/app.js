@@ -1,4 +1,21 @@
 var hdio = angular.module('heardioApp', ['ui.router','firebase']);
+
+hdio.run(function(){
+	
+	    if ('serviceWorker' in navigator) {
+ console.log('Service Worker is supported');
+ navigator.serviceWorker.register('js/sw.js').then(function(reg) {
+   console.log(':^)', reg);
+ 
+ }).catch(function(err) {
+   console.log(':^(', err);
+ });
+}
+
+
+});
+
+
 hdio.constant('FirbaseUrl', "https://heardio.firebaseio.com/");
 hdio.service('rootReference', ['FirbaseUrl', Firebase]);
 

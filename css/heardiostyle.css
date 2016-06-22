@@ -12,6 +12,12 @@ ul,li{
   padding: 0;
 }
 
+@font-face{
+  font-family: 'Roboto';
+ font-display: auto;
+}
+
+
 body{
 
     background-color: #f4f4f4;
@@ -246,6 +252,10 @@ p{
   padding-right:0;
 }
 
+.minus-all{
+  padding: 0;
+}
+
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-color: WHITE !important;
 }
@@ -311,6 +321,12 @@ color: #fff !important
     width: 65%;
     margin: 16% auto;
 }
+.modern-sizing{
+  margin:0 auto !important;
+  width:90%;
+}
+
+
 main{
 width: 100%;
 
@@ -324,6 +340,13 @@ main{
 width: 100%;
 
 }
+
+.modern-sizing{
+  margin:0 auto !important;
+  width:95%;
+}
+
+
 .modal {
     width: 84%;
     padding: 7%;
