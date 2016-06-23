@@ -5,8 +5,8 @@ hdio.controller('heardUlOAD', ['$scope', function($scope){
 
   $scope.creds = {
   bucket: 'heardio/users',
-  access_key: 'AKIAJYYJKA5H234325VQ', // REMOVED FOR PRIVACY CONCERNS
-  secret_key: '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' // REMOVED FOR PRIVACY CONCERNS
+  access_key: '', // REMOVED FOR PRIVACY CONCERNS
+  secret_key: '' // REMOVED FOR PRIVACY CONCERNS
 }
 
 
